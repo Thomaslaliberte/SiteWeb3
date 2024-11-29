@@ -1,0 +1,57 @@
+{
+    "site.titre":"Les monstres de DnD",
+    "langue.francais":"Fr",
+    "langue.anglais":"An",
+
+    "bouton.deconnection":"Déconnection",
+    "bouton.connection":"Se connecter",
+    "bouton.annuler": "Annuler",
+    "bouton.creer": "Créer",
+    "bouton.modifier": "Modifier",
+    "bouton.retour": "Retour",
+    "bouton.supprimer": "Supprimer",
+    "bouton.ajouter": "Ajouter",
+    "bouton.information":"Informations",
+    "bouton.recherchePuissance": "Recherche par puissance",
+    "bouton.rechercheNom": "Recherche par nom",
+    "bouton.rechercher": "Rechercher",
+
+    "formulaire.connection.titre":"Connection",
+    "formulaire.connection.courriel":"Courriel: ",
+    "formulaire.connection.mdp":"Password: ",
+
+    "formulaire.rechercheNom.titre":"Recherche par nom ",
+
+    "formulaire.recherchePuissance.titre":"Recherche par puissance",
+    
+    "formulaire.modifier.titre": "Modifier un monstre",
+    "formulaire.ajout.titre":"Ajouter un monstre",
+    "formulaire.nom": "Nom: ",
+    "formulaire.CA":"CA: ",
+    "formulaire.AN":"Armure Naturel: ",
+    "formulaire.vie":"Vie: ",
+    "formulaire.vitesse":"Vitesse: ",
+    "formulaire.puissance":"Puissance: ",
+    "formulaire.for":"For",
+    "formulaire.dex":"Dex",
+    "formulaire.con":"Con",
+    "formulaire.int":"Int",
+    "formulaire.sag":"Sag",
+    "formulaire.cha":"Cha",
+    "formulaire.date":"Date d'ajout: ",
+
+    "erreur.sansValeur": "Une valeur doit être entré",
+    "erreur.mdpCourt":"Le mot de passe contient un minimum de 3 charactères",
+    "erreur.mauvaisCourriel": "Un courriel doit etre entré dans ce champs",
+    "erreur.nomInvalide": "Aucun monstre ne possede ce nom.",
+    "erreur.nomVide": "Vous devez écrire un nom.",
+    "erreur.aucuneConnection": "Vous devez être connecter pour faire une recherche.",
+    "erreur.puissanceInvalide": "Il n'y a pas de monstre avec cette puissance.",
+    "erreur.puissanceNegative": "Vous devez donner une puissance de 0 ou plus.",
+    "erreur.aucuneConnectionPuissance": "Vous devez être connecter pour afficher les monstres.",
+
+    "conection.reussi": "Vous êtes connecté",
+    "conection.echec": "Le mot de passe et le courriel ne corespondent pas",
+    
+    "chargement":"Chargement..."
+}

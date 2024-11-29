@@ -1,0 +1,57 @@
+{
+    "site.titre":"DnD's monstrers",
+    "langue.francais":"Fr",
+    "langue.anglais":"En",
+
+    "bouton.deconnection": "Disconnection",
+    "bouton.connection":"Login",
+    "bouton.annuler": "Cancel",
+    "bouton.creer": "Create",
+    "bouton.modifier": "Modify",
+    "bouton.retour": "Back",
+    "bouton.supprimer": "Delete",
+    "bouton.ajouter": "Add",
+    "bouton.information":"Information",
+    "bouton.recherchePuissance": "Find by challenge",
+    "bouton.rechercheNom": "Find by name",
+    "bouton.rechercher": "Find",
+
+    "formulaire.connection.titre":"Login",
+    "formulaire.connection.courriel":"Email: ",
+    "formulaire.connection.mdp":"Password: ",
+
+    "formulaire.rechercheNom.titre":"Find by name ",
+
+    "formulaire.recherchePuissance.titre":"Find by challenge",
+
+    "formulaire.modifier.titre":"Modify a monster",
+    "formulaire.ajout.titre": "Add a monster",
+    "formulaire.nom":"Name: ",
+    "formulaire.CA":"AC: ",
+    "formulaire.AN":"Natural Armor: ",
+    "formulaire.vie":"Health: ",
+    "formulaire.vitesse":"Speed: ",
+    "formulaire.puissance":"Challenge: ",
+    "formulaire.for":"Str",
+    "formulaire.dex":"Dex",
+    "formulaire.con":"Con",
+    "formulaire.int":"Int",
+    "formulaire.sag":"Wis",
+    "formulaire.cha":"Cha",
+    "formulaire.date":"Added date: ",
+
+    "erreur.sansValeur": "A value must be entered",
+    "erreur.mdpCourt": "The password must be at least 3 characters long",
+    "erreur.mauvaisCourriel": "A valid email must be inserted here",
+    "erreur.nomInvalide": "That monster doesn't exists.",
+    "erreur.nomVide": "You need to enter a name.",
+    "erreur.aucuneConnection": "You aren't connected.",
+    "erreur.puissanceInvalide": "No monster as this challenge.",
+    "erreur.puissanceNegative": "The challenge must be at least 0.",
+    "erreur.aucuneConnectionPuissance": "You need to be logged in to see the monsters.",
+    
+    "connection.reussi": "You are connected",
+    "connection.echec": "The email and password don't correspond",
+
+    "chargement":"Loading..."
+}
