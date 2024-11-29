@@ -12,9 +12,9 @@ interface FormulaireModifierProp {
 export default function FormulaireModifier(props: FormulaireModifierProp) {
   const navigate = useNavigate();
   const [messageErreur, setMessageErreur] = useState("");
-  const [cookies, setCookie, removeCookie] = useCookies(["jeton"]);
+  const [cookies] = useCookies(["jeton"]);
 
-  const [id, setId] = useState("");
+  const [_, setId] = useState("");
   const [nom, setNom] = useState("");
   const [CA, setCA] = useState("");
   const [vie, setVie] = useState("");

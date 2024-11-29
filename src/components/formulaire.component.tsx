@@ -8,7 +8,7 @@ import { FormattedMessage } from "react-intl";
 //inspirer du code trouver sur cette page: https://www.dhiwise.com/post/a-step-by-step-guide-to-retrieving-input-values-in-react
 
 export default function FormulaireAjout() {
-  const [cookies, setCookie, removeCookie] = useCookies(["jeton"]);
+  const [cookies] = useCookies(["jeton"]);
   const navigate = useNavigate();
   const [messageErreur, setMessageErreur] = useState("");
   const [formData, setFormData] = useState({

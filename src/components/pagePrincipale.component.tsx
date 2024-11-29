@@ -19,7 +19,7 @@ export default function PagePrincipale() {
   const tableauVide: IMonstre[] = [];
   const intl = useIntl();
   const [monstres, setTableauMonstre] = useState(tableauVide);
-  const [cookies, setCookie, removeCookie] = useCookies(['jeton']);
+  const [cookies] = useCookies(['jeton']);
   const {setMonstreActuel } = useContext(MonstreContext);
   const navigate = useNavigate();
   const [message, setMessage] = useState<{

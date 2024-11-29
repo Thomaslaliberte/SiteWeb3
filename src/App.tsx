@@ -17,7 +17,7 @@ import Francais from "./lang/fr.json";
 import Anglais from "./lang/en.json";
 function App() {
   const { monstreActuel } = useContext(MonstreContext);
-  const [cookies, setCookie, removeCookie] = useCookies(["jeton"]);
+  const [cookies, _, removeCookie] = useCookies(["jeton"]);
   const { langue, setLangue } = useContext(LangueContext);
   const { locale, setLocal } = useContext(LangueContext);
   function Deconnecter() {

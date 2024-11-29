@@ -13,7 +13,7 @@ export default function PopupConnection() {
   const { langue} = useContext(LangueContext);
   const [messageErreurCourriel, setMessageCourriel] = useState("");
   const [messageErreurMDP, setMessageMDP] = useState("");
-  const [cookies, setCookie, removeCookie] = useCookies(["jeton"]);
+  const [_, setCookie] = useCookies(["jeton"]);
   const intl = useIntl();
   const [message, setMessage] = useState<{
     text: string;

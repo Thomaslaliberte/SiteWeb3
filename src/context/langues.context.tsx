@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Francais from '../lang/fr.json';
-import Anglais from '../lang/en.json';
 
 export type LangueContextType = {
     langue: any;

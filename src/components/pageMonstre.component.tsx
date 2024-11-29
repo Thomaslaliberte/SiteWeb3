@@ -12,7 +12,7 @@ interface PageMonstreProp {
 
 export default function PageMonstre(props: PageMonstreProp) {
   const navigate = useNavigate();
-  const [cookies, setCookie, removeCookie] = useCookies(['jeton']);
+  const [cookies] = useCookies(['jeton']);
   const [message, setMessage] = useState<{
     text: string;
     severity: "success" | "error";
@@ -42,10 +42,10 @@ export default function PageMonstre(props: PageMonstreProp) {
   function Supprimer() {
       axios
         .delete(`https://apidev3-1.onrender.com/api/Monstres/${props.id}`)
-        .then((response) => {
+        .then(() => {
           navigate(-1);
         })
-        .catch((response) => {
+        .catch(() => {
             setMessage({
               text: "Une erreur est survenu lors de la suppression",
               severity: "error",

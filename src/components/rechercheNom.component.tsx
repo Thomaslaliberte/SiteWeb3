@@ -1,6 +1,6 @@
 import { Button, Container } from "@mui/material";
 import axios from "axios";
-import { FormEvent, useContext, useEffect, useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { MonstreContext } from "../context/monstre.context";
 import { useCookies } from "react-cookie";
@@ -10,7 +10,7 @@ export default function FormulaireRechercheNom() {
   const navigate = useNavigate();
   const intl = useIntl();
   const { setMonstreActuel } = useContext(MonstreContext);
-  const [cookies, setCookie, removeCookie] = useCookies(['jeton']);
+  const [cookies] = useCookies(['jeton']);
   const [monstre, setMonstre] = useState("");
   const [messageErreur, setMessageErreur] = useState("");
 
