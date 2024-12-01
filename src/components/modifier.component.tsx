@@ -130,7 +130,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
   }
 
   return (
-    <Container sx={{ width: 410 }}>
+    <Container sx={{ width: 400 }}>
       <Card sx={{ backgroundColor: "#bdb76b", width: "100%", padding: 1 }}>
         <form method="post" onSubmit={Modifier}>
           <fieldset>
@@ -228,22 +228,22 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                 />
               </Container>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <label htmlFor="force" style={{ padding: 14 }}>
+                <label htmlFor="force" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.for" defaultMessage="For" />
                 </label>
-                <label htmlFor="dexterite" style={{ padding: 14 }}>
+                <label htmlFor="dexterite" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.dex" defaultMessage="Dex" />
                 </label>
-                <label htmlFor="constitution" style={{ padding: 14 }}>
+                <label htmlFor="constitution" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.con" defaultMessage="Con" />
                 </label>
-                <label htmlFor="intelligence" style={{ padding: 14 }}>
+                <label htmlFor="intelligence" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.int" defaultMessage="Int" />
                 </label>
-                <label htmlFor="sagesse" style={{ padding: 14 }}>
+                <label htmlFor="sagesse" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.sag" defaultMessage="Sag" />
                 </label>
-                <label htmlFor="charisme" style={{ padding: 14 }}>
+                <label htmlFor="charisme" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.cha" defaultMessage="Cha" />
                 </label>
               </div>
@@ -252,7 +252,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                   type="number"
                   id="force"
                   name="force"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={(event) => setForce(event.target.value)}
                   value={force}
                 />
@@ -260,7 +260,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                   type="number"
                   id="dexterite"
                   name="dexterite"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={(event) => setDex(event.target.value)}
                   value={dex}
                 />
@@ -268,7 +268,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                   type="number"
                   id="constitution"
                   name="constitution"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={(event) => setCon(event.target.value)}
                   defaultValue={con}
                 />
@@ -276,7 +276,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                   type="number"
                   id="intelligence"
                   name="intelligence"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={(event) => setIntel(event.target.value)}
                   defaultValue={intel}
                 />
@@ -284,7 +284,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                   type="number"
                   id="sagesse"
                   name="sagesse"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={(event) => setSag(event.target.value)}
                   defaultValue={sag}
                 />
@@ -292,7 +292,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
                   type="number"
                   id="charisme"
                   name="charisme"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={(event) => setCha(event.target.value)}
                   defaultValue={cha}
                 />

@@ -69,14 +69,14 @@ export default function FormulaireRechercheNom() {
           </legend>
           <div style={{ textAlign: "right" }}>
             <div>
-              <label htmlFor="nom" style={{ paddingRight: 10, fontSize: 30 }}>
+              <label htmlFor="nom" style={{ paddingRight: 10, fontSize: 25 }}>
               <FormattedMessage id="formulaire.nom" defaultMessage="Nom: " />
               </label>
               <input
                 type="text"
                 id="nom"
                 name="nom"
-                style={{ backgroundColor: "#2f4f4f", fontSize: 30 }}
+                style={{ backgroundColor: "#2f4f4f", fontSize: 25 }}
                 onChange={(event) => setMonstre(event.target.value)}
               />
             </div>

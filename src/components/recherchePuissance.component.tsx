@@ -94,14 +94,14 @@ export default function FormulaireRecherchePuissance() {
           </legend>
           <div style={{ textAlign: "right" }}>
             <div>
-              <label htmlFor="nom" style={{ paddingRight: 10, fontSize: 30 }}>
+              <label htmlFor="nom" style={{ paddingRight: 10, fontSize: 25 }}>
               <FormattedMessage id="formulaire.nom" defaultMessage="Nom: " />
               </label>
               <input
                 type="number"
                 id="nom"
                 name="nom"
-                style={{ backgroundColor: "#2f4f4f", fontSize: 30 }}
+                style={{ backgroundColor: "#2f4f4f", fontSize: 25 }}
                 onChange={(event) => setPuissance(Number(event.target.value))}
               />
             </div>

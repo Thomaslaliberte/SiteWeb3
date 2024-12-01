@@ -126,11 +126,11 @@ export default function FormulaireAjout() {
   }
 
   return (
-    <Container sx={{ width: 410 }}>
+    <Container sx={{ width: 400 }}>
       <Card sx={{ backgroundColor: "#bdb76b", width: "100%", padding: 1 }}>
         <form method="post" onSubmit={Ajouter}>
           <fieldset>
-            <legend style={{ fontSize: 30, padding: 10, alignItems: "center" }}>
+            <legend style={{ fontSize: 28, padding: 10, alignItems: "center" }}>
               <FormattedMessage
                 id="formulaire.ajout.titre"
                 defaultMessage="Créer un monstre"
@@ -218,22 +218,22 @@ export default function FormulaireAjout() {
                 />
               </Container>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <label htmlFor="force" style={{ padding: 14 }}>
+                <label htmlFor="force" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.for" defaultMessage="For" />
                 </label>
-                <label htmlFor="dexterite" style={{ padding: 14 }}>
+                <label htmlFor="dexterite" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.dex" defaultMessage="Dex" />
                 </label>
-                <label htmlFor="constitution" style={{ padding: 14 }}>
+                <label htmlFor="constitution" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.con" defaultMessage="Con" />
                 </label>
-                <label htmlFor="intelligence" style={{ padding: 14 }}>
+                <label htmlFor="intelligence" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.int" defaultMessage="Int" />
                 </label>
-                <label htmlFor="sagesse" style={{ padding: 14 }}>
+                <label htmlFor="sagesse" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.sag" defaultMessage="Sag" />
                 </label>
-                <label htmlFor="charisme" style={{ padding: 14 }}>
+                <label htmlFor="charisme" style={{ padding: 12 }}>
                   <FormattedMessage id="formulaire.cha" defaultMessage="Cha" />
                 </label>
               </div>
@@ -242,42 +242,42 @@ export default function FormulaireAjout() {
                   type="number"
                   id="force"
                   name="force"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={HandleChange}
                 />
                 <input
                   type="number"
                   id="dexterite"
                   name="dexterite"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={HandleChange}
                 />
                 <input
                   type="number"
                   id="constitution"
                   name="constitution"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={HandleChange}
                 />
                 <input
                   type="number"
                   id="intelligence"
                   name="intelligence"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={HandleChange}
                 />
                 <input
                   type="number"
                   id="sagesse"
                   name="sagesse"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={HandleChange}
                 />
                 <input
                   type="number"
                   id="charisme"
                   name="charisme"
-                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 10 }}
+                  style={{ backgroundColor: "#2f4f4f", width: 28, margin: 8 }}
                   onChange={HandleChange}
                 />
               </div>
