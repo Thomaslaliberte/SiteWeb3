@@ -152,7 +152,7 @@ export default function PagePrincipale() {
       </>
     );
   } else {
-    return <Typography variant="h1"><FormattedMessage id="chargement" defaultMessage="Chargement..." /></Typography>;
+    return <Typography variant="h3"><FormattedMessage id="chargement" defaultMessage="Chargement..." /></Typography>;
   }
 
   function OuvrirMonstre(monstre: IMonstre) {

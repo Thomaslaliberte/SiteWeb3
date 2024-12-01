@@ -5,6 +5,9 @@ npm install
 
 l'application permet d'afficher des monstres de dnd. De plus, une fois connecté, l'utilisateur peut voir les informations des monstres, en ajouter/modifier/supprimer et faire des recherches en utilsant le nom ou la puissance
 
+###Attention###
+render(utilisé pour mettre l'api es ligne) peut etre très lent lors de la premiere requete. S'il ne veut toujours pas charger près un bout, m'envoyer un message pour que je le redémare pourrait être une bonne idée
+
 connection:
 utilisateur: smaxwell@example.com
 mot de passe: ILoveBanana

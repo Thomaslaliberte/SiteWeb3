@@ -55,7 +55,7 @@ export default function PageMonstre(props: PageMonstreProp) {
   }
 
   if (monstre == monstreVide) {
-    return <Typography variant="h1"><FormattedMessage id="chargement" defaultMessage="Chargement..." /></Typography>;
+    return <Typography variant="h3"><FormattedMessage id="chargement" defaultMessage="Chargement..." /></Typography>;
   } else {
     return (
       <>
