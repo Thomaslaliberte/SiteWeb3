@@ -51,15 +51,13 @@ export default function PagePrincipale() {
     return (
       <>
         {cookies.jeton ? (
-          <Container sx={{paddingTop:5}}>
+          <Container sx={{paddingTop:8, marginBottom: 15,}}>
             <Button
               sx={{
                 backgroundColor: "#2f4f4f",
                 borderRadius: 2,
                 color: "white",
-                marginTop: 2,
                 margin: 1,
-                marginBottom: 15,
               }}
               onClick={() => navigate('/recherchePuissance')}
             >
@@ -70,9 +68,7 @@ export default function PagePrincipale() {
                 backgroundColor: "#2f4f4f",
                 borderRadius: 2,
                 color: "white",
-                marginTop: 2,
                 margin: 1,
-                marginBottom: 15,
               }}
               onClick={() => navigate('/rechercheNom')}
             >
@@ -83,9 +79,8 @@ export default function PagePrincipale() {
                 backgroundColor: "#2f4f4f",
                 borderRadius: 2,
                 color: "white",
-                marginTop: 2,
                 margin: 1,
-                marginBottom: 15,
+                
               }}
               onClick={() => Ajouter()}
             >
