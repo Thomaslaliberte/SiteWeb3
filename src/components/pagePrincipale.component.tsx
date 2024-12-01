@@ -51,7 +51,7 @@ export default function PagePrincipale() {
     return (
       <>
         {cookies.jeton ? (
-          <Container>
+          <Container sx={{paddingTop:5}}>
             <Button
               sx={{
                 backgroundColor: "#2f4f4f",
