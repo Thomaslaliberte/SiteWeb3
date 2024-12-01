@@ -12,7 +12,7 @@ connection:
 utilisateur: smaxwell@example.com
 mot de passe: ILoveBanana
 
-lien vers l'application en ligne: https://674a6fff2f674d7dd8326033--projetwebsite.netlify.app
+lien vers l'application en ligne: https://674bbdc6a54a3f0008da3e93--projetwebsite.netlify.app
 
 
 # React + TypeScript + Vite
