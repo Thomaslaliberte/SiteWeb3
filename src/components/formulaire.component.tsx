@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 import moment from "moment";
 import { useCookies } from "react-cookie";
 import { FormattedMessage } from "react-intl";
-//inspirer du code trouver sur cette page: https://www.dhiwise.com/post/a-step-by-step-guide-to-retrieving-input-values-in-react
 
+//component pour ajouter un monstre
 export default function FormulaireAjout() {
   const [cookies] = useCookies(["jeton"]);
   const navigate = useNavigate();
@@ -27,6 +27,9 @@ export default function FormulaireAjout() {
   });
 
   axios.defaults.headers.common = { Authorization: `bearer ${cookies.jeton}` };
+
+  //change les valeur du formulaire
+  //inspirer du code trouver sur cette page: https://www.dhiwise.com/post/a-step-by-step-guide-to-retrieving-input-values-in-react
   function HandleChange(event: ChangeEvent<HTMLInputElement>): void {
     let name: any;
     let value: any;
@@ -47,10 +50,12 @@ export default function FormulaireAjout() {
       [name]: value,
     }));
   }
-  let messageErreurTemp = "";
+  //fin du code emprunté
+
+  //vérifie que les valeurs respectent les normes puis entre le nouveau monstre dans la BD
   function Ajouter(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
-    messageErreurTemp = "";
+    let messageErreurTemp = "";
     setMessageErreur("");
     console.log(formData);
     if (formData.nom.length < 1) {
