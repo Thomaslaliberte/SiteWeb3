@@ -15,14 +15,20 @@ import { LangueContext } from "./context/langues.context";
 import { FormattedMessage, IntlProvider } from "react-intl";
 import Francais from "./lang/fr.json";
 import Anglais from "./lang/en.json";
+
+
 function App() {
   const { monstreActuel } = useContext(MonstreContext);
   const [cookies, _, removeCookie] = useCookies(["jeton"]);
   const { langue, setLangue } = useContext(LangueContext);
   const { locale, setLocal } = useContext(LangueContext);
+
+  //Efface le cookie contenent le jeton
   function Deconnecter() {
     removeCookie("jeton");
   }
+
+  //Permute la langue
   function changerLangue(): void {
     if (langue == Francais) {
       setLangue(Anglais);
