@@ -7,6 +7,7 @@ import { IMonstre } from '../model/IMonstre.model';
 import { useCookies } from "react-cookie";
 import { defineMessages, FormattedMessage, useIntl } from "react-intl";
 
+//component affichant les monstre possedant la puissance entré par l'utilisateur
 export default function FormulaireRecherchePuissance() {
   const navigate = useNavigate();
   const [cookies] = useCookies(['jeton']);
@@ -21,6 +22,7 @@ export default function FormulaireRecherchePuissance() {
     severity: "success" | "error";
   } | null>(null);
 
+  //sert à l'internationalisation du texte dans des variables
   const messages = defineMessages({
     puissanceInvalide: {
       id: "erreur.puissanceInvalide",
@@ -48,6 +50,7 @@ export default function FormulaireRecherchePuissance() {
     },
   });
 
+  //change la page pour celle affichant les information d'un monstre
   function OuvrirMonstre(monstre: IMonstre) {
     if (cookies.jeton != "") {
       setMonstreActuel(monstre._id);
@@ -60,6 +63,7 @@ export default function FormulaireRecherchePuissance() {
     }
   }
 
+  //cherche tout les monstre ayant la puissance entré
   function Recherche(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
     setMonstres(tableauVide);
@@ -142,7 +146,8 @@ export default function FormulaireRecherchePuissance() {
           spacing={1}
           sx={{ width: "100%", justifyContent: "center" }}
         >
-          {monstres &&
+          {//affiche tout les monstres dans le tableau retourné par l'api
+          monstres &&
             monstres.map((monstre) => {
               return (
                 <Card
@@ -177,7 +182,8 @@ export default function FormulaireRecherchePuissance() {
         </Grid>
           </Container>
           :""}
-          {message && (
+          {//affiche un message d'echec ou de réussite
+          message && (
           <Snackbar
             open
             autoHideDuration={6000}

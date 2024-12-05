@@ -8,7 +8,7 @@ import { defineMessages, FormattedMessage, useIntl } from "react-intl";
 import { LangueContext } from "../context/langues.context";
 import Francais from "../lang/fr.json";
 
-//inspirer du code trouver sur cette page: https://www.dhiwise.com/post/a-step-by-step-guide-to-retrieving-input-values-in-react
+//component du popup contenent le formulaire d'authentification
 export default function PopupConnection() {
   const { langue} = useContext(LangueContext);
   const [messageErreurCourriel, setMessageCourriel] = useState("");
@@ -27,7 +27,7 @@ export default function PopupConnection() {
     courriel: "",
     mdp: "",
   });
-
+  //sert à l'internationalisation du texte dans des variables
   const messages = defineMessages({
     sansValeur: {
       id: "erreur.sansValeur",
@@ -60,6 +60,7 @@ export default function PopupConnection() {
     },
   });
 
+  //verifie que les données soient aux normes puis demande un jeton a l'api
   function Connection(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
     if (formData.courriel.length == 0) {
@@ -101,6 +102,8 @@ export default function PopupConnection() {
     }
   }
 
+  //change les valeurs du formulaire
+  //inspirer du code trouver sur cette page: https://www.dhiwise.com/post/a-step-by-step-guide-to-retrieving-input-values-in-react
   function HandleChange(event: ChangeEvent<HTMLInputElement>): void {
     const { name, value } = event.target;
     setFormData((prevState) => ({
@@ -108,6 +111,7 @@ export default function PopupConnection() {
       [name]: value,
     }));
   }
+  //fin du code inspiré
 
   return (
     <>
@@ -203,7 +207,8 @@ export default function PopupConnection() {
           </form>
         </Box>
       </Popup>
-      {message && (
+      {//affiche un message d'erreur ou de réussite
+      message && (
         <Snackbar open autoHideDuration={6000} onClose={() => setMessage(null)}>
           <Alert
             onClose={() => setMessage(null)}

@@ -6,6 +6,7 @@ import { MonstreContext } from "../context/monstre.context";
 import { useCookies } from "react-cookie";
 import { defineMessages, FormattedMessage, useIntl } from "react-intl";
 
+//component cherchant un monstre ayant le nom entré par l'utilisateur
 export default function FormulaireRechercheNom() {
   const navigate = useNavigate();
   const intl = useIntl();
@@ -14,6 +15,7 @@ export default function FormulaireRechercheNom() {
   const [monstre, setMonstre] = useState("");
   const [messageErreur, setMessageErreur] = useState("");
 
+  //sert à l'internationalisation du texte dans des variables
   const messages = defineMessages({
     nomInvalide: {
       id: "erreur.nomInvalide",
@@ -35,6 +37,7 @@ export default function FormulaireRechercheNom() {
     },
   });
 
+  //fait une demande à l'api pour un monstre ayant le nom entré
   function Recherche(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
    

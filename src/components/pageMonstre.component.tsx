@@ -10,6 +10,7 @@ interface PageMonstreProp {
   id: string;
 }
 
+//component pour afficher les informations d'un monstre
 export default function PageMonstre(props: PageMonstreProp) {
   const navigate = useNavigate();
   const [cookies] = useCookies(['jeton']);
@@ -39,6 +40,8 @@ export default function PageMonstre(props: PageMonstreProp) {
         setMonstre(response.data.monstre);
       });
   });
+
+  //supprime le monstre 
   function Supprimer() {
       axios
         .delete(`https://apidev3-1.onrender.com/api/Monstres/${props.id}`)
@@ -81,7 +84,8 @@ export default function PageMonstre(props: PageMonstreProp) {
 
           <Container sx={{ paddingLeft: 10, paddingRight: 10 }}>
             <Grid container spacing={1} sx={{ justifyContent: "center" }}>
-              {monstre.stats &&
+              {//affiche toute les stats du tableau stats
+              monstre.stats &&
                 monstre.stats.map((stat) => {
                   return (
                     <Card
@@ -182,7 +186,8 @@ export default function PageMonstre(props: PageMonstreProp) {
             <FormattedMessage id="bouton.modifier" defaultMessage="Modifier" />
           </Button>
         </Card>
-        {message && (
+        {//affiche un message d'erreur ou de réussite
+        message && (
         <Snackbar open autoHideDuration={6000} onClose={() => setMessage(null)}>
           <Alert
             onClose={() => setMessage(null)}

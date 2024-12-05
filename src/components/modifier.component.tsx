@@ -8,7 +8,7 @@ import { FormattedMessage } from "react-intl";
 interface FormulaireModifierProp {
   id: string;
 }
-
+//component pour modifier un monstre
 export default function FormulaireModifier(props: FormulaireModifierProp) {
   const navigate = useNavigate();
   const [messageErreur, setMessageErreur] = useState("");
@@ -30,6 +30,8 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
   const [puissance, setPuissance] = useState("");
 
   axios.defaults.headers.common = { Authorization: `bearer ${cookies.jeton}` };
+
+  //assigne les données du monstre à modifier
   useEffect(() => {
     axios
       .get(`https://apidev3-1.onrender.com/api/Monstres/id/${props.id}`)
@@ -53,6 +55,7 @@ export default function FormulaireModifier(props: FormulaireModifierProp) {
       });
   }, []);
 
+  //Vérifie que les valeurs du monstre respecte les normes puis change le monstre dans la BD
   function Modifier(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
     let messageErreurTemp = "";

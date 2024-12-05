@@ -15,6 +15,7 @@ import { MonstreContext } from "../context/monstre.context";
 import { useCookies } from "react-cookie";
 import { defineMessages, FormattedMessage, useIntl } from "react-intl";
 
+//component qui affiche tout les monstres 
 export default function PagePrincipale() {
   const tableauVide: IMonstre[] = [];
   const intl = useIntl();
@@ -34,6 +35,7 @@ export default function PagePrincipale() {
       });
   }, [monstres]);
 
+  //sert à l'internationalisation du texte dans des variables
   const messages = defineMessages({
     aucuneConnection: {
       id: "erreur.aucuneConnection",
@@ -43,6 +45,7 @@ export default function PagePrincipale() {
     },
   });
 
+  //change de page pour celle servant à ajouter un monstre
   function Ajouter() {
     navigate("/formulaireAjout");
   }
@@ -96,7 +99,8 @@ export default function PagePrincipale() {
           spacing={1}
           sx={{ width: "100%", justifyContent: "center" }}
         >
-          {monstres &&
+          {//affiche tout les monstres du tableau de monstres
+          monstres &&
             monstres.map((monstre) => {
               return (
                 <Card
@@ -129,7 +133,8 @@ export default function PagePrincipale() {
               );
             })}
         </Grid>
-        {message && (
+        {//affiche d'erreur ou de réussite
+        message && (
           <Snackbar
             open
             autoHideDuration={6000}
